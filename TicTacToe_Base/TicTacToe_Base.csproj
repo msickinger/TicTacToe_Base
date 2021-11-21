@@ -58,19 +58,22 @@
     <Compile Include="GameBoard.Designer.cs">
       <DependentUpon>GameBoard.cs</DependentUpon>
     </Compile>
-    <Compile Include="Program.cs" />
-    <Compile Include="Properties\AssemblyInfo.cs" />
-    <Compile Include="SetupCharacterForm.cs">
+    <Compile Include="PlayerSetup.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="SetupCharacterForm.Designer.cs">
-      <DependentUpon>SetupCharacterForm.cs</DependentUpon>
+    <Compile Include="PlayerSetup.Designer.cs">
+      <DependentUpon>PlayerSetup.cs</DependentUpon>
     </Compile>
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
     <EmbeddedResource Include="Form1.resx">
       <DependentUpon>Form1.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="GameBoard.resx">
       <DependentUpon>GameBoard.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="PlayerSetup.resx">
+      <DependentUpon>PlayerSetup.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>
@@ -81,9 +84,6 @@
       <AutoGen>True</AutoGen>
       <DependentUpon>Resources.resx</DependentUpon>
     </Compile>
-    <EmbeddedResource Include="SetupCharacterForm.resx">
-      <DependentUpon>SetupCharacterForm.cs</DependentUpon>
-    </EmbeddedResource>
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>
       <LastGenOutput>Settings.Designer.cs</LastGenOutput>
