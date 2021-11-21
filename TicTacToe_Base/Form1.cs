@@ -15,15 +15,21 @@ namespace TicTacToe_Base
         public Form1()
         {
             InitializeComponent();
-           
+           PlayerSetup obj = new PlayerSetup();
+            obj.Show();
+            timer1.Enabled = true;
             
         }
 
         private void Form1_Load(object sender, EventArgs e)
         {
-            Form frm = new SetupCharacterForm();
+            
+        }
 
-            frm.Show();
+        private void timer1_Tick(object sender, EventArgs e)
+        {
+            Hide();
+            timer1.Enabled=false;
         }
     }
     

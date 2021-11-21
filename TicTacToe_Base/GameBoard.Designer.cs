@@ -32,20 +32,20 @@
             this.lblGBP1Name = new System.Windows.Forms.Label();
             this.lblGBTurn = new System.Windows.Forms.Label();
             this.tableLayoutPanel2 = new System.Windows.Forms.TableLayoutPanel();
-            this.tableLayoutPanel3 = new System.Windows.Forms.TableLayoutPanel();
-            this.lblGBP2Name = new System.Windows.Forms.Label();
             this.lblGBP1Char = new System.Windows.Forms.Label();
+            this.tableLayoutPanel3 = new System.Windows.Forms.TableLayoutPanel();
             this.lblGBP2Char = new System.Windows.Forms.Label();
+            this.lblGBP2Name = new System.Windows.Forms.Label();
             this.tableLayoutPanel1 = new System.Windows.Forms.TableLayoutPanel();
-            this.label1 = new System.Windows.Forms.Label();
-            this.label2 = new System.Windows.Forms.Label();
-            this.label3 = new System.Windows.Forms.Label();
-            this.label4 = new System.Windows.Forms.Label();
-            this.label5 = new System.Windows.Forms.Label();
-            this.label6 = new System.Windows.Forms.Label();
-            this.label7 = new System.Windows.Forms.Label();
-            this.label8 = new System.Windows.Forms.Label();
             this.label9 = new System.Windows.Forms.Label();
+            this.label8 = new System.Windows.Forms.Label();
+            this.label7 = new System.Windows.Forms.Label();
+            this.label6 = new System.Windows.Forms.Label();
+            this.label5 = new System.Windows.Forms.Label();
+            this.label4 = new System.Windows.Forms.Label();
+            this.label3 = new System.Windows.Forms.Label();
+            this.label2 = new System.Windows.Forms.Label();
+            this.label1 = new System.Windows.Forms.Label();
             this.tableLayoutPanel2.SuspendLayout();
             this.tableLayoutPanel3.SuspendLayout();
             this.tableLayoutPanel1.SuspendLayout();
@@ -86,6 +86,18 @@
             this.tableLayoutPanel2.Size = new System.Drawing.Size(251, 43);
             this.tableLayoutPanel2.TabIndex = 4;
             // 
+            // lblGBP1Char
+            // 
+            this.lblGBP1Char.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Right)));
+            this.lblGBP1Char.AutoSize = true;
+            this.lblGBP1Char.Font = new System.Drawing.Font("Garamond", 18F, System.Drawing.FontStyle.Bold);
+            this.lblGBP1Char.ImageAlign = System.Drawing.ContentAlignment.MiddleRight;
+            this.lblGBP1Char.Location = new System.Drawing.Point(178, 16);
+            this.lblGBP1Char.Name = "lblGBP1Char";
+            this.lblGBP1Char.Size = new System.Drawing.Size(70, 27);
+            this.lblGBP1Char.TabIndex = 1;
+            this.lblGBP1Char.Text = "label1";
+            // 
             // tableLayoutPanel3
             // 
             this.tableLayoutPanel3.ColumnCount = 2;
@@ -100,29 +112,6 @@
             this.tableLayoutPanel3.Size = new System.Drawing.Size(279, 43);
             this.tableLayoutPanel3.TabIndex = 5;
             // 
-            // lblGBP2Name
-            // 
-            this.lblGBP2Name.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left)));
-            this.lblGBP2Name.AutoSize = true;
-            this.lblGBP2Name.Font = new System.Drawing.Font("Garamond", 18F, System.Drawing.FontStyle.Bold);
-            this.lblGBP2Name.Location = new System.Drawing.Point(3, 16);
-            this.lblGBP2Name.Name = "lblGBP2Name";
-            this.lblGBP2Name.Size = new System.Drawing.Size(70, 27);
-            this.lblGBP2Name.TabIndex = 0;
-            this.lblGBP2Name.Text = "label1";
-            // 
-            // lblGBP1Char
-            // 
-            this.lblGBP1Char.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Right)));
-            this.lblGBP1Char.AutoSize = true;
-            this.lblGBP1Char.Font = new System.Drawing.Font("Garamond", 18F, System.Drawing.FontStyle.Bold);
-            this.lblGBP1Char.ImageAlign = System.Drawing.ContentAlignment.MiddleRight;
-            this.lblGBP1Char.Location = new System.Drawing.Point(178, 16);
-            this.lblGBP1Char.Name = "lblGBP1Char";
-            this.lblGBP1Char.Size = new System.Drawing.Size(70, 27);
-            this.lblGBP1Char.TabIndex = 1;
-            this.lblGBP1Char.Text = "label1";
-            // 
             // lblGBP2Char
             // 
             this.lblGBP2Char.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Right)));
@@ -133,6 +122,17 @@
             this.lblGBP2Char.Size = new System.Drawing.Size(70, 27);
             this.lblGBP2Char.TabIndex = 1;
             this.lblGBP2Char.Text = "label1";
+            // 
+            // lblGBP2Name
+            // 
+            this.lblGBP2Name.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left)));
+            this.lblGBP2Name.AutoSize = true;
+            this.lblGBP2Name.Font = new System.Drawing.Font("Garamond", 18F, System.Drawing.FontStyle.Bold);
+            this.lblGBP2Name.Location = new System.Drawing.Point(3, 16);
+            this.lblGBP2Name.Name = "lblGBP2Name";
+            this.lblGBP2Name.Size = new System.Drawing.Size(70, 27);
+            this.lblGBP2Name.TabIndex = 0;
+            this.lblGBP2Name.Text = "label1";
             // 
             // tableLayoutPanel1
             // 
@@ -159,103 +159,19 @@
             this.tableLayoutPanel1.Size = new System.Drawing.Size(459, 301);
             this.tableLayoutPanel1.TabIndex = 6;
             // 
-            // label1
+            // label9
             // 
-            this.label1.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            this.label9.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
             | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
-            this.label1.AutoSize = true;
-            this.label1.Font = new System.Drawing.Font("Webdings", 20F);
-            this.label1.Location = new System.Drawing.Point(5, 2);
-            this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(144, 97);
-            this.label1.TabIndex = 0;
-            this.label1.Text = "c";
-            this.label1.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            // 
-            // label2
-            // 
-            this.label2.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
-            | System.Windows.Forms.AnchorStyles.Left) 
-            | System.Windows.Forms.AnchorStyles.Right)));
-            this.label2.AutoSize = true;
-            this.label2.Font = new System.Drawing.Font("Webdings", 20F);
-            this.label2.Location = new System.Drawing.Point(157, 2);
-            this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(144, 97);
-            this.label2.TabIndex = 7;
-            this.label2.Text = "c";
-            this.label2.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            // 
-            // label3
-            // 
-            this.label3.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
-            | System.Windows.Forms.AnchorStyles.Left) 
-            | System.Windows.Forms.AnchorStyles.Right)));
-            this.label3.AutoSize = true;
-            this.label3.Font = new System.Drawing.Font("Webdings", 20F);
-            this.label3.Location = new System.Drawing.Point(309, 2);
-            this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(145, 97);
-            this.label3.TabIndex = 7;
-            this.label3.Text = "c";
-            this.label3.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            // 
-            // label4
-            // 
-            this.label4.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
-            | System.Windows.Forms.AnchorStyles.Left) 
-            | System.Windows.Forms.AnchorStyles.Right)));
-            this.label4.AutoSize = true;
-            this.label4.Font = new System.Drawing.Font("Webdings", 20F);
-            this.label4.Location = new System.Drawing.Point(157, 101);
-            this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(144, 97);
-            this.label4.TabIndex = 7;
-            this.label4.Text = "c";
-            this.label4.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            // 
-            // label5
-            // 
-            this.label5.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
-            | System.Windows.Forms.AnchorStyles.Left) 
-            | System.Windows.Forms.AnchorStyles.Right)));
-            this.label5.AutoSize = true;
-            this.label5.Font = new System.Drawing.Font("Webdings", 20F);
-            this.label5.Location = new System.Drawing.Point(309, 101);
-            this.label5.Name = "label5";
-            this.label5.Size = new System.Drawing.Size(145, 97);
-            this.label5.TabIndex = 7;
-            this.label5.Text = "c";
-            this.label5.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            // 
-            // label6
-            // 
-            this.label6.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
-            | System.Windows.Forms.AnchorStyles.Left) 
-            | System.Windows.Forms.AnchorStyles.Right)));
-            this.label6.AutoSize = true;
-            this.label6.Font = new System.Drawing.Font("Webdings", 20F);
-            this.label6.Location = new System.Drawing.Point(5, 101);
-            this.label6.Name = "label6";
-            this.label6.Size = new System.Drawing.Size(144, 97);
-            this.label6.TabIndex = 7;
-            this.label6.Text = "c";
-            this.label6.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            // 
-            // label7
-            // 
-            this.label7.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
-            | System.Windows.Forms.AnchorStyles.Left) 
-            | System.Windows.Forms.AnchorStyles.Right)));
-            this.label7.AutoSize = true;
-            this.label7.Font = new System.Drawing.Font("Webdings", 20F);
-            this.label7.Location = new System.Drawing.Point(309, 200);
-            this.label7.Name = "label7";
-            this.label7.Size = new System.Drawing.Size(145, 99);
-            this.label7.TabIndex = 7;
-            this.label7.Text = "c";
-            this.label7.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.label9.AutoSize = true;
+            this.label9.Font = new System.Drawing.Font("Webdings", 20F);
+            this.label9.Location = new System.Drawing.Point(5, 200);
+            this.label9.Name = "label9";
+            this.label9.Size = new System.Drawing.Size(144, 99);
+            this.label9.TabIndex = 7;
+            this.label9.Text = "c";
+            this.label9.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
             // label8
             // 
@@ -271,19 +187,103 @@
             this.label8.Text = "c";
             this.label8.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
-            // label9
+            // label7
             // 
-            this.label9.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            this.label7.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
             | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
-            this.label9.AutoSize = true;
-            this.label9.Font = new System.Drawing.Font("Webdings", 20F);
-            this.label9.Location = new System.Drawing.Point(5, 200);
-            this.label9.Name = "label9";
-            this.label9.Size = new System.Drawing.Size(144, 99);
-            this.label9.TabIndex = 7;
-            this.label9.Text = "c";
-            this.label9.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.label7.AutoSize = true;
+            this.label7.Font = new System.Drawing.Font("Webdings", 20F);
+            this.label7.Location = new System.Drawing.Point(309, 200);
+            this.label7.Name = "label7";
+            this.label7.Size = new System.Drawing.Size(145, 99);
+            this.label7.TabIndex = 7;
+            this.label7.Text = "c";
+            this.label7.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            // 
+            // label6
+            // 
+            this.label6.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
+            this.label6.AutoSize = true;
+            this.label6.Font = new System.Drawing.Font("Webdings", 20F);
+            this.label6.Location = new System.Drawing.Point(5, 101);
+            this.label6.Name = "label6";
+            this.label6.Size = new System.Drawing.Size(144, 97);
+            this.label6.TabIndex = 7;
+            this.label6.Text = "c";
+            this.label6.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            // 
+            // label5
+            // 
+            this.label5.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
+            this.label5.AutoSize = true;
+            this.label5.Font = new System.Drawing.Font("Webdings", 20F);
+            this.label5.Location = new System.Drawing.Point(309, 101);
+            this.label5.Name = "label5";
+            this.label5.Size = new System.Drawing.Size(145, 97);
+            this.label5.TabIndex = 7;
+            this.label5.Text = "c";
+            this.label5.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            // 
+            // label4
+            // 
+            this.label4.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
+            this.label4.AutoSize = true;
+            this.label4.Font = new System.Drawing.Font("Webdings", 20F);
+            this.label4.Location = new System.Drawing.Point(157, 101);
+            this.label4.Name = "label4";
+            this.label4.Size = new System.Drawing.Size(144, 97);
+            this.label4.TabIndex = 7;
+            this.label4.Text = "c";
+            this.label4.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            // 
+            // label3
+            // 
+            this.label3.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
+            this.label3.AutoSize = true;
+            this.label3.Font = new System.Drawing.Font("Webdings", 20F);
+            this.label3.Location = new System.Drawing.Point(309, 2);
+            this.label3.Name = "label3";
+            this.label3.Size = new System.Drawing.Size(145, 97);
+            this.label3.TabIndex = 7;
+            this.label3.Text = "c";
+            this.label3.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            // 
+            // label2
+            // 
+            this.label2.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
+            this.label2.AutoSize = true;
+            this.label2.Font = new System.Drawing.Font("Webdings", 20F);
+            this.label2.Location = new System.Drawing.Point(157, 2);
+            this.label2.Name = "label2";
+            this.label2.Size = new System.Drawing.Size(144, 97);
+            this.label2.TabIndex = 7;
+            this.label2.Text = "c";
+            this.label2.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            // 
+            // label1
+            // 
+            this.label1.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
+            this.label1.AutoSize = true;
+            this.label1.Font = new System.Drawing.Font("Webdings", 20F);
+            this.label1.Location = new System.Drawing.Point(5, 2);
+            this.label1.Name = "label1";
+            this.label1.Size = new System.Drawing.Size(144, 97);
+            this.label1.TabIndex = 0;
+            this.label1.Text = "c";
+            this.label1.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
             // GameBoard
             // 
@@ -297,6 +297,7 @@
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.Name = "GameBoard";
             this.Text = "GameBoard";
+            this.Load += new System.EventHandler(this.GameBoard_Load);
             this.tableLayoutPanel2.ResumeLayout(false);
             this.tableLayoutPanel2.PerformLayout();
             this.tableLayoutPanel3.ResumeLayout(false);
