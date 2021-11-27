@@ -29,8 +29,16 @@
         private void InitializeComponent()
         {
             this.splitContainer1 = new System.Windows.Forms.SplitContainer();
+            this.chkP1Ready = new System.Windows.Forms.CheckBox();
             this.tableLayoutPanel1 = new System.Windows.Forms.TableLayoutPanel();
-            this.btnP1Ready = new System.Windows.Forms.Button();
+            this.button8 = new System.Windows.Forms.Button();
+            this.button7 = new System.Windows.Forms.Button();
+            this.button6 = new System.Windows.Forms.Button();
+            this.button5 = new System.Windows.Forms.Button();
+            this.button4 = new System.Windows.Forms.Button();
+            this.button3 = new System.Windows.Forms.Button();
+            this.button2 = new System.Windows.Forms.Button();
+            this.button1 = new System.Windows.Forms.Button();
             this.btnCharColorP1 = new System.Windows.Forms.Button();
             this.btnTileColorP1 = new System.Windows.Forms.Button();
             this.label7 = new System.Windows.Forms.Label();
@@ -38,6 +46,16 @@
             this.txtPlayer1Name = new System.Windows.Forms.TextBox();
             this.label3 = new System.Windows.Forms.Label();
             this.label1 = new System.Windows.Forms.Label();
+            this.tableLayoutPanel2 = new System.Windows.Forms.TableLayoutPanel();
+            this.button9 = new System.Windows.Forms.Button();
+            this.button10 = new System.Windows.Forms.Button();
+            this.button11 = new System.Windows.Forms.Button();
+            this.button12 = new System.Windows.Forms.Button();
+            this.button13 = new System.Windows.Forms.Button();
+            this.button14 = new System.Windows.Forms.Button();
+            this.button15 = new System.Windows.Forms.Button();
+            this.button16 = new System.Windows.Forms.Button();
+            this.chkP2Ready = new System.Windows.Forms.CheckBox();
             this.btnCharColorP2 = new System.Windows.Forms.Button();
             this.btnTileColorP2 = new System.Windows.Forms.Button();
             this.label8 = new System.Windows.Forms.Label();
@@ -45,17 +63,14 @@
             this.txtPlayer2Name = new System.Windows.Forms.TextBox();
             this.label4 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
-            this.chkP1Ready = new System.Windows.Forms.CheckBox();
-            this.chkP2Ready = new System.Windows.Forms.CheckBox();
-            this.chkP1Char1 = new System.Windows.Forms.CheckBox();
-            this.chkP1Char2 = new System.Windows.Forms.CheckBox();
-            this.chkP1Char3 = new System.Windows.Forms.CheckBox();
-            this.chkP1Char4 = new System.Windows.Forms.CheckBox();
-            this.chkP1Char5 = new System.Windows.Forms.CheckBox();
-            this.chkP1Char6 = new System.Windows.Forms.CheckBox();
-            this.chkP1Char7 = new System.Windows.Forms.CheckBox();
             this.chkP1Char8 = new System.Windows.Forms.CheckBox();
-            this.tableLayoutPanel2 = new System.Windows.Forms.TableLayoutPanel();
+            this.chkP1Char7 = new System.Windows.Forms.CheckBox();
+            this.chkP1Char6 = new System.Windows.Forms.CheckBox();
+            this.chkP1Char5 = new System.Windows.Forms.CheckBox();
+            this.chkP1Char4 = new System.Windows.Forms.CheckBox();
+            this.chkP1Char3 = new System.Windows.Forms.CheckBox();
+            this.chkP1Char2 = new System.Windows.Forms.CheckBox();
+            this.chkP1Char1 = new System.Windows.Forms.CheckBox();
             this.checkBox1 = new System.Windows.Forms.CheckBox();
             this.checkBox2 = new System.Windows.Forms.CheckBox();
             this.checkBox3 = new System.Windows.Forms.CheckBox();
@@ -64,6 +79,10 @@
             this.checkBox6 = new System.Windows.Forms.CheckBox();
             this.checkBox7 = new System.Windows.Forms.CheckBox();
             this.chkP2Char1 = new System.Windows.Forms.CheckBox();
+            this.colorDialog1 = new System.Windows.Forms.ColorDialog();
+            this.colorDialog2 = new System.Windows.Forms.ColorDialog();
+            this.colorDialog3 = new System.Windows.Forms.ColorDialog();
+            this.colorDialog4 = new System.Windows.Forms.ColorDialog();
             ((System.ComponentModel.ISupportInitialize)(this.splitContainer1)).BeginInit();
             this.splitContainer1.Panel1.SuspendLayout();
             this.splitContainer1.Panel2.SuspendLayout();
@@ -83,7 +102,6 @@
             this.splitContainer1.Panel1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(128)))), ((int)(((byte)(255)))));
             this.splitContainer1.Panel1.Controls.Add(this.chkP1Ready);
             this.splitContainer1.Panel1.Controls.Add(this.tableLayoutPanel1);
-            this.splitContainer1.Panel1.Controls.Add(this.btnP1Ready);
             this.splitContainer1.Panel1.Controls.Add(this.btnCharColorP1);
             this.splitContainer1.Panel1.Controls.Add(this.btnTileColorP1);
             this.splitContainer1.Panel1.Controls.Add(this.label7);
@@ -108,6 +126,19 @@
             this.splitContainer1.SplitterDistance = 404;
             this.splitContainer1.TabIndex = 0;
             // 
+            // chkP1Ready
+            // 
+            this.chkP1Ready.Appearance = System.Windows.Forms.Appearance.Button;
+            this.chkP1Ready.AutoSize = true;
+            this.chkP1Ready.Font = new System.Drawing.Font("Garamond", 18F, System.Drawing.FontStyle.Bold);
+            this.chkP1Ready.Location = new System.Drawing.Point(63, 447);
+            this.chkP1Ready.Name = "chkP1Ready";
+            this.chkP1Ready.Size = new System.Drawing.Size(251, 37);
+            this.chkP1Ready.TabIndex = 13;
+            this.chkP1Ready.Text = "Click here when ready!";
+            this.chkP1Ready.UseVisualStyleBackColor = true;
+            this.chkP1Ready.CheckedChanged += new System.EventHandler(this.chkP1Ready_CheckedChanged);
+            // 
             // tableLayoutPanel1
             // 
             this.tableLayoutPanel1.ColumnCount = 4;
@@ -115,29 +146,117 @@
             this.tableLayoutPanel1.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 25F));
             this.tableLayoutPanel1.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 25F));
             this.tableLayoutPanel1.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 25F));
-            this.tableLayoutPanel1.Controls.Add(this.chkP1Char8, 3, 1);
-            this.tableLayoutPanel1.Controls.Add(this.chkP1Char7, 2, 1);
-            this.tableLayoutPanel1.Controls.Add(this.chkP1Char6, 1, 1);
-            this.tableLayoutPanel1.Controls.Add(this.chkP1Char5, 0, 1);
-            this.tableLayoutPanel1.Controls.Add(this.chkP1Char4, 3, 0);
-            this.tableLayoutPanel1.Controls.Add(this.chkP1Char3, 2, 0);
-            this.tableLayoutPanel1.Controls.Add(this.chkP1Char2, 1, 0);
-            this.tableLayoutPanel1.Controls.Add(this.chkP1Char1, 0, 0);
-            this.tableLayoutPanel1.Location = new System.Drawing.Point(42, 275);
+            this.tableLayoutPanel1.Controls.Add(this.button8, 3, 1);
+            this.tableLayoutPanel1.Controls.Add(this.button7, 2, 1);
+            this.tableLayoutPanel1.Controls.Add(this.button6, 1, 1);
+            this.tableLayoutPanel1.Controls.Add(this.button5, 0, 1);
+            this.tableLayoutPanel1.Controls.Add(this.button4, 3, 0);
+            this.tableLayoutPanel1.Controls.Add(this.button3, 2, 0);
+            this.tableLayoutPanel1.Controls.Add(this.button2, 1, 0);
+            this.tableLayoutPanel1.Controls.Add(this.button1, 0, 0);
+            this.tableLayoutPanel1.Location = new System.Drawing.Point(78, 272);
             this.tableLayoutPanel1.Name = "tableLayoutPanel1";
             this.tableLayoutPanel1.RowCount = 2;
             this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 50F));
             this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 50F));
-            this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 20F));
-            this.tableLayoutPanel1.Size = new System.Drawing.Size(287, 132);
-            this.tableLayoutPanel1.TabIndex = 11;
+            this.tableLayoutPanel1.Size = new System.Drawing.Size(200, 100);
+            this.tableLayoutPanel1.TabIndex = 14;
             // 
-            // btnP1Ready
+            // button8
             // 
-            this.btnP1Ready.Location = new System.Drawing.Point(0, 0);
-            this.btnP1Ready.Name = "btnP1Ready";
-            this.btnP1Ready.Size = new System.Drawing.Size(75, 23);
-            this.btnP1Ready.TabIndex = 12;
+            this.button8.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.button8.Font = new System.Drawing.Font("Wingdings", 24F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(2)));
+            this.button8.Location = new System.Drawing.Point(153, 53);
+            this.button8.Name = "button8";
+            this.button8.Size = new System.Drawing.Size(44, 44);
+            this.button8.TabIndex = 7;
+            this.button8.Text = "L";
+            this.button8.UseVisualStyleBackColor = true;
+            this.button8.Click += new System.EventHandler(this.button8_Click);
+            // 
+            // button7
+            // 
+            this.button7.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.button7.Font = new System.Drawing.Font("Wingdings", 24F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(2)));
+            this.button7.Location = new System.Drawing.Point(103, 53);
+            this.button7.Name = "button7";
+            this.button7.Size = new System.Drawing.Size(44, 44);
+            this.button7.TabIndex = 6;
+            this.button7.Text = "P";
+            this.button7.UseVisualStyleBackColor = true;
+            this.button7.Click += new System.EventHandler(this.button7_Click);
+            // 
+            // button6
+            // 
+            this.button6.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.button6.Font = new System.Drawing.Font("Wingdings", 24F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(2)));
+            this.button6.Location = new System.Drawing.Point(53, 53);
+            this.button6.Name = "button6";
+            this.button6.Size = new System.Drawing.Size(44, 44);
+            this.button6.TabIndex = 5;
+            this.button6.Text = "I";
+            this.button6.UseVisualStyleBackColor = true;
+            this.button6.Click += new System.EventHandler(this.button6_Click);
+            // 
+            // button5
+            // 
+            this.button5.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.button5.Font = new System.Drawing.Font("Wingdings", 24F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(2)));
+            this.button5.Location = new System.Drawing.Point(3, 53);
+            this.button5.Name = "button5";
+            this.button5.Size = new System.Drawing.Size(44, 44);
+            this.button5.TabIndex = 4;
+            this.button5.Text = "T";
+            this.button5.UseVisualStyleBackColor = true;
+            this.button5.Click += new System.EventHandler(this.button5_Click);
+            // 
+            // button4
+            // 
+            this.button4.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.button4.Font = new System.Drawing.Font("Wingdings", 24F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(2)));
+            this.button4.Location = new System.Drawing.Point(153, 3);
+            this.button4.Name = "button4";
+            this.button4.Size = new System.Drawing.Size(44, 44);
+            this.button4.TabIndex = 3;
+            this.button4.Text = "{";
+            this.button4.UseVisualStyleBackColor = true;
+            this.button4.Click += new System.EventHandler(this.button4_Click);
+            // 
+            // button3
+            // 
+            this.button3.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.button3.Font = new System.Drawing.Font("Wingdings", 24F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(2)));
+            this.button3.Location = new System.Drawing.Point(103, 3);
+            this.button3.Name = "button3";
+            this.button3.Size = new System.Drawing.Size(44, 44);
+            this.button3.TabIndex = 2;
+            this.button3.Text = "]";
+            this.button3.UseVisualStyleBackColor = true;
+            this.button3.Click += new System.EventHandler(this.button3_Click);
+            // 
+            // button2
+            // 
+            this.button2.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.button2.Font = new System.Drawing.Font("Wingdings", 24F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(2)));
+            this.button2.Location = new System.Drawing.Point(53, 3);
+            this.button2.Name = "button2";
+            this.button2.Size = new System.Drawing.Size(44, 44);
+            this.button2.TabIndex = 1;
+            this.button2.Text = "S";
+            this.button2.UseVisualStyleBackColor = true;
+            this.button2.Click += new System.EventHandler(this.button2_Click);
+            // 
+            // button1
+            // 
+            this.button1.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.button1.Font = new System.Drawing.Font("Wingdings", 24F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(2)));
+            this.button1.Location = new System.Drawing.Point(3, 3);
+            this.button1.Name = "button1";
+            this.button1.Size = new System.Drawing.Size(44, 44);
+            this.button1.TabIndex = 0;
+            this.button1.Text = "R";
+            this.button1.UseVisualStyleBackColor = true;
+            this.button1.Click += new System.EventHandler(this.button1_Click);
             // 
             // btnCharColorP1
             // 
@@ -147,6 +266,7 @@
             this.btnCharColorP1.Size = new System.Drawing.Size(116, 36);
             this.btnCharColorP1.TabIndex = 8;
             this.btnCharColorP1.UseVisualStyleBackColor = false;
+            this.btnCharColorP1.Click += new System.EventHandler(this.btnCharColorP1_Click);
             // 
             // btnTileColorP1
             // 
@@ -206,6 +326,138 @@
             this.label1.TabIndex = 0;
             this.label1.Text = "Player 1 Settings";
             // 
+            // tableLayoutPanel2
+            // 
+            this.tableLayoutPanel2.ColumnCount = 4;
+            this.tableLayoutPanel2.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 25F));
+            this.tableLayoutPanel2.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 25F));
+            this.tableLayoutPanel2.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 25F));
+            this.tableLayoutPanel2.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 25F));
+            this.tableLayoutPanel2.Controls.Add(this.button9, 3, 1);
+            this.tableLayoutPanel2.Controls.Add(this.button10, 2, 1);
+            this.tableLayoutPanel2.Controls.Add(this.button11, 1, 1);
+            this.tableLayoutPanel2.Controls.Add(this.button12, 0, 1);
+            this.tableLayoutPanel2.Controls.Add(this.button13, 3, 0);
+            this.tableLayoutPanel2.Controls.Add(this.button14, 2, 0);
+            this.tableLayoutPanel2.Controls.Add(this.button15, 1, 0);
+            this.tableLayoutPanel2.Controls.Add(this.button16, 0, 0);
+            this.tableLayoutPanel2.Location = new System.Drawing.Point(80, 275);
+            this.tableLayoutPanel2.Name = "tableLayoutPanel2";
+            this.tableLayoutPanel2.RowCount = 2;
+            this.tableLayoutPanel2.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 50F));
+            this.tableLayoutPanel2.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 50F));
+            this.tableLayoutPanel2.Size = new System.Drawing.Size(200, 100);
+            this.tableLayoutPanel2.TabIndex = 15;
+            // 
+            // button9
+            // 
+            this.button9.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.button9.Font = new System.Drawing.Font("Wingdings", 24F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(2)));
+            this.button9.Location = new System.Drawing.Point(153, 53);
+            this.button9.Name = "button9";
+            this.button9.Size = new System.Drawing.Size(44, 44);
+            this.button9.TabIndex = 7;
+            this.button9.Text = "L";
+            this.button9.UseVisualStyleBackColor = true;
+            this.button9.Click += new System.EventHandler(this.button9_Click);
+            // 
+            // button10
+            // 
+            this.button10.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.button10.Font = new System.Drawing.Font("Wingdings", 24F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(2)));
+            this.button10.Location = new System.Drawing.Point(103, 53);
+            this.button10.Name = "button10";
+            this.button10.Size = new System.Drawing.Size(44, 44);
+            this.button10.TabIndex = 6;
+            this.button10.Text = "P";
+            this.button10.UseVisualStyleBackColor = true;
+            this.button10.Click += new System.EventHandler(this.button10_Click);
+            // 
+            // button11
+            // 
+            this.button11.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.button11.Font = new System.Drawing.Font("Wingdings", 24F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(2)));
+            this.button11.Location = new System.Drawing.Point(53, 53);
+            this.button11.Name = "button11";
+            this.button11.Size = new System.Drawing.Size(44, 44);
+            this.button11.TabIndex = 5;
+            this.button11.Text = "I";
+            this.button11.UseVisualStyleBackColor = true;
+            this.button11.Click += new System.EventHandler(this.button11_Click);
+            // 
+            // button12
+            // 
+            this.button12.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.button12.Font = new System.Drawing.Font("Wingdings", 24F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(2)));
+            this.button12.Location = new System.Drawing.Point(3, 53);
+            this.button12.Name = "button12";
+            this.button12.Size = new System.Drawing.Size(44, 44);
+            this.button12.TabIndex = 4;
+            this.button12.Text = "T";
+            this.button12.UseVisualStyleBackColor = true;
+            this.button12.Click += new System.EventHandler(this.button12_Click);
+            // 
+            // button13
+            // 
+            this.button13.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.button13.Font = new System.Drawing.Font("Wingdings", 24F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(2)));
+            this.button13.Location = new System.Drawing.Point(153, 3);
+            this.button13.Name = "button13";
+            this.button13.Size = new System.Drawing.Size(44, 44);
+            this.button13.TabIndex = 3;
+            this.button13.Text = "{";
+            this.button13.UseVisualStyleBackColor = true;
+            this.button13.Click += new System.EventHandler(this.button13_Click);
+            // 
+            // button14
+            // 
+            this.button14.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.button14.Font = new System.Drawing.Font("Wingdings", 24F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(2)));
+            this.button14.Location = new System.Drawing.Point(103, 3);
+            this.button14.Name = "button14";
+            this.button14.Size = new System.Drawing.Size(44, 44);
+            this.button14.TabIndex = 2;
+            this.button14.Text = "]";
+            this.button14.UseVisualStyleBackColor = true;
+            this.button14.Click += new System.EventHandler(this.button14_Click);
+            // 
+            // button15
+            // 
+            this.button15.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.button15.Font = new System.Drawing.Font("Wingdings", 24F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(2)));
+            this.button15.Location = new System.Drawing.Point(53, 3);
+            this.button15.Name = "button15";
+            this.button15.Size = new System.Drawing.Size(44, 44);
+            this.button15.TabIndex = 1;
+            this.button15.Text = "S";
+            this.button15.UseVisualStyleBackColor = true;
+            this.button15.Click += new System.EventHandler(this.button15_Click);
+            // 
+            // button16
+            // 
+            this.button16.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.button16.Font = new System.Drawing.Font("Wingdings", 24F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(2)));
+            this.button16.Location = new System.Drawing.Point(3, 3);
+            this.button16.Name = "button16";
+            this.button16.Size = new System.Drawing.Size(44, 44);
+            this.button16.TabIndex = 0;
+            this.button16.Text = "R";
+            this.button16.UseVisualStyleBackColor = true;
+            this.button16.Click += new System.EventHandler(this.button16_Click);
+            // 
+            // chkP2Ready
+            // 
+            this.chkP2Ready.Appearance = System.Windows.Forms.Appearance.Button;
+            this.chkP2Ready.AutoSize = true;
+            this.chkP2Ready.Font = new System.Drawing.Font("Garamond", 18F, System.Drawing.FontStyle.Bold);
+            this.chkP2Ready.Location = new System.Drawing.Point(71, 447);
+            this.chkP2Ready.Name = "chkP2Ready";
+            this.chkP2Ready.Size = new System.Drawing.Size(251, 37);
+            this.chkP2Ready.TabIndex = 14;
+            this.chkP2Ready.Text = "Click here when ready!";
+            this.chkP2Ready.UseVisualStyleBackColor = true;
+            this.chkP2Ready.CheckedChanged += new System.EventHandler(this.chkP2Ready_CheckedChanged);
+            // 
             // btnCharColorP2
             // 
             this.btnCharColorP2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(192)))), ((int)(((byte)(255)))));
@@ -214,6 +466,7 @@
             this.btnCharColorP2.Size = new System.Drawing.Size(116, 36);
             this.btnCharColorP2.TabIndex = 10;
             this.btnCharColorP2.UseVisualStyleBackColor = false;
+            this.btnCharColorP2.Click += new System.EventHandler(this.btnCharColorP2_Click);
             // 
             // btnTileColorP2
             // 
@@ -223,6 +476,7 @@
             this.btnTileColorP2.Size = new System.Drawing.Size(116, 36);
             this.btnTileColorP2.TabIndex = 9;
             this.btnTileColorP2.UseVisualStyleBackColor = false;
+            this.btnTileColorP2.Click += new System.EventHandler(this.btnTileColorP2_Click);
             // 
             // label8
             // 
@@ -272,264 +526,117 @@
             this.label2.TabIndex = 1;
             this.label2.Text = "Player 2 Settings";
             // 
-            // chkP1Ready
+            // chkP1Char8
             // 
-            this.chkP1Ready.Appearance = System.Windows.Forms.Appearance.Button;
-            this.chkP1Ready.AutoSize = true;
-            this.chkP1Ready.Font = new System.Drawing.Font("Garamond", 18F, System.Drawing.FontStyle.Bold);
-            this.chkP1Ready.Location = new System.Drawing.Point(63, 447);
-            this.chkP1Ready.Name = "chkP1Ready";
-            this.chkP1Ready.Size = new System.Drawing.Size(251, 37);
-            this.chkP1Ready.TabIndex = 13;
-            this.chkP1Ready.Text = "Click here when ready!";
-            this.chkP1Ready.UseVisualStyleBackColor = true;
-            this.chkP1Ready.CheckedChanged += new System.EventHandler(this.chkP1Ready_CheckedChanged);
-            // 
-            // chkP2Ready
-            // 
-            this.chkP2Ready.Appearance = System.Windows.Forms.Appearance.Button;
-            this.chkP2Ready.AutoSize = true;
-            this.chkP2Ready.Font = new System.Drawing.Font("Garamond", 18F, System.Drawing.FontStyle.Bold);
-            this.chkP2Ready.Location = new System.Drawing.Point(71, 447);
-            this.chkP2Ready.Name = "chkP2Ready";
-            this.chkP2Ready.Size = new System.Drawing.Size(251, 37);
-            this.chkP2Ready.TabIndex = 14;
-            this.chkP2Ready.Text = "Click here when ready!";
-            this.chkP2Ready.UseVisualStyleBackColor = true;
-            this.chkP2Ready.CheckedChanged += new System.EventHandler(this.chkP2Ready_CheckedChanged);
-            // 
-            // chkP1Char1
-            // 
-            this.chkP1Char1.Appearance = System.Windows.Forms.Appearance.Button;
-            this.chkP1Char1.AutoSize = true;
-            this.chkP1Char1.Font = new System.Drawing.Font("Wingdings", 27.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(2)));
-            this.chkP1Char1.Location = new System.Drawing.Point(3, 3);
-            this.chkP1Char1.Name = "chkP1Char1";
-            this.chkP1Char1.Size = new System.Drawing.Size(59, 51);
-            this.chkP1Char1.TabIndex = 0;
-            this.chkP1Char1.Text = "J";
-            this.chkP1Char1.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            this.chkP1Char1.UseVisualStyleBackColor = true;
-            this.chkP1Char1.CheckedChanged += new System.EventHandler(this.chkP1Char1_CheckedChanged);
-            // 
-            // chkP1Char2
-            // 
-            this.chkP1Char2.Appearance = System.Windows.Forms.Appearance.Button;
-            this.chkP1Char2.AutoSize = true;
-            this.chkP1Char2.Font = new System.Drawing.Font("Wingdings", 27.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(2)));
-            this.chkP1Char2.Location = new System.Drawing.Point(74, 3);
-            this.chkP1Char2.Name = "chkP1Char2";
-            this.chkP1Char2.Size = new System.Drawing.Size(61, 51);
-            this.chkP1Char2.TabIndex = 1;
-            this.chkP1Char2.Text = "R";
-            this.chkP1Char2.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            this.chkP1Char2.UseVisualStyleBackColor = true;
-            // 
-            // chkP1Char3
-            // 
-            this.chkP1Char3.Appearance = System.Windows.Forms.Appearance.Button;
-            this.chkP1Char3.AutoSize = true;
-            this.chkP1Char3.Font = new System.Drawing.Font("Wingdings", 27.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(2)));
-            this.chkP1Char3.Location = new System.Drawing.Point(145, 3);
-            this.chkP1Char3.Name = "chkP1Char3";
-            this.chkP1Char3.Size = new System.Drawing.Size(58, 51);
-            this.chkP1Char3.TabIndex = 2;
-            this.chkP1Char3.Text = "T";
-            this.chkP1Char3.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            this.chkP1Char3.UseVisualStyleBackColor = true;
-            // 
-            // chkP1Char4
-            // 
-            this.chkP1Char4.Appearance = System.Windows.Forms.Appearance.Button;
-            this.chkP1Char4.AutoSize = true;
-            this.chkP1Char4.Font = new System.Drawing.Font("Wingdings", 27.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(2)));
-            this.chkP1Char4.Location = new System.Drawing.Point(216, 3);
-            this.chkP1Char4.Name = "chkP1Char4";
-            this.chkP1Char4.Size = new System.Drawing.Size(52, 51);
-            this.chkP1Char4.TabIndex = 3;
-            this.chkP1Char4.Text = "S";
-            this.chkP1Char4.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            this.chkP1Char4.UseVisualStyleBackColor = true;
-            // 
-            // chkP1Char5
-            // 
-            this.chkP1Char5.Appearance = System.Windows.Forms.Appearance.Button;
-            this.chkP1Char5.AutoSize = true;
-            this.chkP1Char5.Font = new System.Drawing.Font("Wingdings", 27.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(2)));
-            this.chkP1Char5.Location = new System.Drawing.Point(3, 69);
-            this.chkP1Char5.Name = "chkP1Char5";
-            this.chkP1Char5.Size = new System.Drawing.Size(61, 51);
-            this.chkP1Char5.TabIndex = 4;
-            this.chkP1Char5.Text = "[";
-            this.chkP1Char5.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            this.chkP1Char5.UseVisualStyleBackColor = true;
-            // 
-            // chkP1Char6
-            // 
-            this.chkP1Char6.Appearance = System.Windows.Forms.Appearance.Button;
-            this.chkP1Char6.AutoSize = true;
-            this.chkP1Char6.Font = new System.Drawing.Font("Wingdings", 27.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(2)));
-            this.chkP1Char6.Location = new System.Drawing.Point(74, 69);
-            this.chkP1Char6.Name = "chkP1Char6";
-            this.chkP1Char6.Size = new System.Drawing.Size(61, 51);
-            this.chkP1Char6.TabIndex = 5;
-            this.chkP1Char6.Text = "{";
-            this.chkP1Char6.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            this.chkP1Char6.UseVisualStyleBackColor = true;
+            this.chkP1Char8.Location = new System.Drawing.Point(0, 0);
+            this.chkP1Char8.Name = "chkP1Char8";
+            this.chkP1Char8.Size = new System.Drawing.Size(104, 24);
+            this.chkP1Char8.TabIndex = 0;
             // 
             // chkP1Char7
             // 
-            this.chkP1Char7.Appearance = System.Windows.Forms.Appearance.Button;
-            this.chkP1Char7.AutoSize = true;
-            this.chkP1Char7.Font = new System.Drawing.Font("Wingdings", 27.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(2)));
-            this.chkP1Char7.Location = new System.Drawing.Point(145, 69);
+            this.chkP1Char7.Location = new System.Drawing.Point(0, 0);
             this.chkP1Char7.Name = "chkP1Char7";
-            this.chkP1Char7.Size = new System.Drawing.Size(61, 51);
-            this.chkP1Char7.TabIndex = 6;
-            this.chkP1Char7.Text = "]";
-            this.chkP1Char7.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            this.chkP1Char7.UseVisualStyleBackColor = true;
+            this.chkP1Char7.Size = new System.Drawing.Size(104, 24);
+            this.chkP1Char7.TabIndex = 0;
             // 
-            // chkP1Char8
+            // chkP1Char6
             // 
-            this.chkP1Char8.Appearance = System.Windows.Forms.Appearance.Button;
-            this.chkP1Char8.AutoSize = true;
-            this.chkP1Char8.Font = new System.Drawing.Font("Wingdings", 27.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(2)));
-            this.chkP1Char8.Location = new System.Drawing.Point(216, 69);
-            this.chkP1Char8.Name = "chkP1Char8";
-            this.chkP1Char8.Size = new System.Drawing.Size(61, 51);
-            this.chkP1Char8.TabIndex = 7;
-            this.chkP1Char8.Text = "I";
-            this.chkP1Char8.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            this.chkP1Char8.UseVisualStyleBackColor = true;
+            this.chkP1Char6.Location = new System.Drawing.Point(0, 0);
+            this.chkP1Char6.Name = "chkP1Char6";
+            this.chkP1Char6.Size = new System.Drawing.Size(104, 24);
+            this.chkP1Char6.TabIndex = 0;
             // 
-            // tableLayoutPanel2
+            // chkP1Char5
             // 
-            this.tableLayoutPanel2.ColumnCount = 4;
-            this.tableLayoutPanel2.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 25F));
-            this.tableLayoutPanel2.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 25F));
-            this.tableLayoutPanel2.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 25F));
-            this.tableLayoutPanel2.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 25F));
-            this.tableLayoutPanel2.Controls.Add(this.checkBox1, 3, 1);
-            this.tableLayoutPanel2.Controls.Add(this.checkBox2, 2, 1);
-            this.tableLayoutPanel2.Controls.Add(this.checkBox3, 1, 1);
-            this.tableLayoutPanel2.Controls.Add(this.checkBox4, 0, 1);
-            this.tableLayoutPanel2.Controls.Add(this.checkBox5, 3, 0);
-            this.tableLayoutPanel2.Controls.Add(this.checkBox6, 2, 0);
-            this.tableLayoutPanel2.Controls.Add(this.checkBox7, 1, 0);
-            this.tableLayoutPanel2.Controls.Add(this.chkP2Char1, 0, 0);
-            this.tableLayoutPanel2.Location = new System.Drawing.Point(44, 275);
-            this.tableLayoutPanel2.Name = "tableLayoutPanel2";
-            this.tableLayoutPanel2.RowCount = 2;
-            this.tableLayoutPanel2.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 50F));
-            this.tableLayoutPanel2.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 50F));
-            this.tableLayoutPanel2.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 20F));
-            this.tableLayoutPanel2.Size = new System.Drawing.Size(287, 132);
-            this.tableLayoutPanel2.TabIndex = 15;
+            this.chkP1Char5.Location = new System.Drawing.Point(0, 0);
+            this.chkP1Char5.Name = "chkP1Char5";
+            this.chkP1Char5.Size = new System.Drawing.Size(104, 24);
+            this.chkP1Char5.TabIndex = 0;
+            // 
+            // chkP1Char4
+            // 
+            this.chkP1Char4.Location = new System.Drawing.Point(0, 0);
+            this.chkP1Char4.Name = "chkP1Char4";
+            this.chkP1Char4.Size = new System.Drawing.Size(104, 24);
+            this.chkP1Char4.TabIndex = 0;
+            // 
+            // chkP1Char3
+            // 
+            this.chkP1Char3.Location = new System.Drawing.Point(0, 0);
+            this.chkP1Char3.Name = "chkP1Char3";
+            this.chkP1Char3.Size = new System.Drawing.Size(104, 24);
+            this.chkP1Char3.TabIndex = 0;
+            // 
+            // chkP1Char2
+            // 
+            this.chkP1Char2.Location = new System.Drawing.Point(0, 0);
+            this.chkP1Char2.Name = "chkP1Char2";
+            this.chkP1Char2.Size = new System.Drawing.Size(104, 24);
+            this.chkP1Char2.TabIndex = 0;
+            // 
+            // chkP1Char1
+            // 
+            this.chkP1Char1.Location = new System.Drawing.Point(0, 0);
+            this.chkP1Char1.Name = "chkP1Char1";
+            this.chkP1Char1.Size = new System.Drawing.Size(104, 24);
+            this.chkP1Char1.TabIndex = 0;
             // 
             // checkBox1
             // 
-            this.checkBox1.Appearance = System.Windows.Forms.Appearance.Button;
-            this.checkBox1.AutoSize = true;
-            this.checkBox1.Font = new System.Drawing.Font("Wingdings", 27.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(2)));
-            this.checkBox1.Location = new System.Drawing.Point(216, 69);
+            this.checkBox1.Location = new System.Drawing.Point(0, 0);
             this.checkBox1.Name = "checkBox1";
-            this.checkBox1.Size = new System.Drawing.Size(61, 51);
-            this.checkBox1.TabIndex = 7;
-            this.checkBox1.Text = "I";
-            this.checkBox1.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            this.checkBox1.UseVisualStyleBackColor = true;
+            this.checkBox1.Size = new System.Drawing.Size(104, 24);
+            this.checkBox1.TabIndex = 0;
             // 
             // checkBox2
             // 
-            this.checkBox2.Appearance = System.Windows.Forms.Appearance.Button;
-            this.checkBox2.AutoSize = true;
-            this.checkBox2.Font = new System.Drawing.Font("Wingdings", 27.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(2)));
-            this.checkBox2.Location = new System.Drawing.Point(145, 69);
+            this.checkBox2.Location = new System.Drawing.Point(0, 0);
             this.checkBox2.Name = "checkBox2";
-            this.checkBox2.Size = new System.Drawing.Size(61, 51);
-            this.checkBox2.TabIndex = 6;
-            this.checkBox2.Text = "]";
-            this.checkBox2.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            this.checkBox2.UseVisualStyleBackColor = true;
+            this.checkBox2.Size = new System.Drawing.Size(104, 24);
+            this.checkBox2.TabIndex = 0;
             // 
             // checkBox3
             // 
-            this.checkBox3.Appearance = System.Windows.Forms.Appearance.Button;
-            this.checkBox3.AutoSize = true;
-            this.checkBox3.Font = new System.Drawing.Font("Wingdings", 27.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(2)));
-            this.checkBox3.Location = new System.Drawing.Point(74, 69);
+            this.checkBox3.Location = new System.Drawing.Point(0, 0);
             this.checkBox3.Name = "checkBox3";
-            this.checkBox3.Size = new System.Drawing.Size(61, 51);
-            this.checkBox3.TabIndex = 5;
-            this.checkBox3.Text = "{";
-            this.checkBox3.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            this.checkBox3.UseVisualStyleBackColor = true;
+            this.checkBox3.Size = new System.Drawing.Size(104, 24);
+            this.checkBox3.TabIndex = 0;
             // 
             // checkBox4
             // 
-            this.checkBox4.Appearance = System.Windows.Forms.Appearance.Button;
-            this.checkBox4.AutoSize = true;
-            this.checkBox4.Font = new System.Drawing.Font("Wingdings", 27.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(2)));
-            this.checkBox4.Location = new System.Drawing.Point(3, 69);
+            this.checkBox4.Location = new System.Drawing.Point(0, 0);
             this.checkBox4.Name = "checkBox4";
-            this.checkBox4.Size = new System.Drawing.Size(61, 51);
-            this.checkBox4.TabIndex = 4;
-            this.checkBox4.Text = "[";
-            this.checkBox4.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            this.checkBox4.UseVisualStyleBackColor = true;
+            this.checkBox4.Size = new System.Drawing.Size(104, 24);
+            this.checkBox4.TabIndex = 0;
             // 
             // checkBox5
             // 
-            this.checkBox5.Appearance = System.Windows.Forms.Appearance.Button;
-            this.checkBox5.AutoSize = true;
-            this.checkBox5.Font = new System.Drawing.Font("Wingdings", 27.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(2)));
-            this.checkBox5.Location = new System.Drawing.Point(216, 3);
+            this.checkBox5.Location = new System.Drawing.Point(0, 0);
             this.checkBox5.Name = "checkBox5";
-            this.checkBox5.Size = new System.Drawing.Size(52, 51);
-            this.checkBox5.TabIndex = 3;
-            this.checkBox5.Text = "S";
-            this.checkBox5.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            this.checkBox5.UseVisualStyleBackColor = true;
+            this.checkBox5.Size = new System.Drawing.Size(104, 24);
+            this.checkBox5.TabIndex = 0;
             // 
             // checkBox6
             // 
-            this.checkBox6.Appearance = System.Windows.Forms.Appearance.Button;
-            this.checkBox6.AutoSize = true;
-            this.checkBox6.Font = new System.Drawing.Font("Wingdings", 27.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(2)));
-            this.checkBox6.Location = new System.Drawing.Point(145, 3);
+            this.checkBox6.Location = new System.Drawing.Point(0, 0);
             this.checkBox6.Name = "checkBox6";
-            this.checkBox6.Size = new System.Drawing.Size(58, 51);
-            this.checkBox6.TabIndex = 2;
-            this.checkBox6.Text = "T";
-            this.checkBox6.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            this.checkBox6.UseVisualStyleBackColor = true;
+            this.checkBox6.Size = new System.Drawing.Size(104, 24);
+            this.checkBox6.TabIndex = 0;
             // 
             // checkBox7
             // 
-            this.checkBox7.Appearance = System.Windows.Forms.Appearance.Button;
-            this.checkBox7.AutoSize = true;
-            this.checkBox7.Font = new System.Drawing.Font("Wingdings", 27.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(2)));
-            this.checkBox7.Location = new System.Drawing.Point(74, 3);
+            this.checkBox7.Location = new System.Drawing.Point(0, 0);
             this.checkBox7.Name = "checkBox7";
-            this.checkBox7.Size = new System.Drawing.Size(61, 51);
-            this.checkBox7.TabIndex = 1;
-            this.checkBox7.Text = "R";
-            this.checkBox7.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            this.checkBox7.UseVisualStyleBackColor = true;
+            this.checkBox7.Size = new System.Drawing.Size(104, 24);
+            this.checkBox7.TabIndex = 0;
             // 
             // chkP2Char1
             // 
-            this.chkP2Char1.Appearance = System.Windows.Forms.Appearance.Button;
-            this.chkP2Char1.AutoSize = true;
-            this.chkP2Char1.Font = new System.Drawing.Font("Wingdings", 27.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(2)));
-            this.chkP2Char1.Location = new System.Drawing.Point(3, 3);
+            this.chkP2Char1.Location = new System.Drawing.Point(0, 0);
             this.chkP2Char1.Name = "chkP2Char1";
-            this.chkP2Char1.Size = new System.Drawing.Size(59, 51);
+            this.chkP2Char1.Size = new System.Drawing.Size(104, 24);
             this.chkP2Char1.TabIndex = 0;
-            this.chkP2Char1.Text = "J";
-            this.chkP2Char1.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            this.chkP2Char1.UseVisualStyleBackColor = true;
             // 
             // PlayerSetup
             // 
@@ -546,9 +653,7 @@
             ((System.ComponentModel.ISupportInitialize)(this.splitContainer1)).EndInit();
             this.splitContainer1.ResumeLayout(false);
             this.tableLayoutPanel1.ResumeLayout(false);
-            this.tableLayoutPanel1.PerformLayout();
             this.tableLayoutPanel2.ResumeLayout(false);
-            this.tableLayoutPanel2.PerformLayout();
             this.ResumeLayout(false);
 
         }
@@ -570,7 +675,6 @@
         private System.Windows.Forms.TextBox txtPlayer2Name;
         private System.Windows.Forms.Label label4;
         private System.Windows.Forms.Label label2;
-        private System.Windows.Forms.Button btnP1Ready;
         private System.Windows.Forms.TableLayoutPanel tableLayoutPanel1;
         private System.Windows.Forms.CheckBox chkP1Ready;
         private System.Windows.Forms.CheckBox chkP2Ready;
@@ -582,7 +686,6 @@
         private System.Windows.Forms.CheckBox chkP1Char3;
         private System.Windows.Forms.CheckBox chkP1Char2;
         private System.Windows.Forms.CheckBox chkP1Char1;
-        private System.Windows.Forms.TableLayoutPanel tableLayoutPanel2;
         private System.Windows.Forms.CheckBox checkBox1;
         private System.Windows.Forms.CheckBox checkBox2;
         private System.Windows.Forms.CheckBox checkBox3;
@@ -591,5 +694,26 @@
         private System.Windows.Forms.CheckBox checkBox6;
         private System.Windows.Forms.CheckBox checkBox7;
         private System.Windows.Forms.CheckBox chkP2Char1;
+        private System.Windows.Forms.Button button8;
+        private System.Windows.Forms.Button button7;
+        private System.Windows.Forms.Button button6;
+        private System.Windows.Forms.Button button5;
+        private System.Windows.Forms.Button button4;
+        private System.Windows.Forms.Button button3;
+        private System.Windows.Forms.Button button2;
+        private System.Windows.Forms.Button button1;
+        private System.Windows.Forms.TableLayoutPanel tableLayoutPanel2;
+        private System.Windows.Forms.Button button9;
+        private System.Windows.Forms.Button button10;
+        private System.Windows.Forms.Button button11;
+        private System.Windows.Forms.Button button12;
+        private System.Windows.Forms.Button button13;
+        private System.Windows.Forms.Button button14;
+        private System.Windows.Forms.Button button15;
+        private System.Windows.Forms.Button button16;
+        private System.Windows.Forms.ColorDialog colorDialog1;
+        private System.Windows.Forms.ColorDialog colorDialog2;
+        private System.Windows.Forms.ColorDialog colorDialog3;
+        private System.Windows.Forms.ColorDialog colorDialog4;
     }
 }
